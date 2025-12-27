@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Projects — Afrasama</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#0f172a;color:#e5e7eb;}
+nav{background:#020617;padding:15px 60px;display:flex;justify-content:space-between;}
+nav a{color:#e5e7eb;margin-left:20px;text-decoration:none;font-weight:600;}
+nav a:hover{color:#38bdf8;}
+.container{max-width:900px;margin:50px auto;}
+.card{background:#020617;border:1px solid #1f2937;border-radius:16px;padding:20px;margin-top:20px;}
+.card:hover{border-color:#38bdf8;transform:translateY(-3px);transition:0.3s;}
+.cta{background:#38bdf8;color:#020617;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600;display:inline-block;margin-top:10px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div><b>Afrasama A Harlapur</b></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+<h1>Projects</h1>
+
+<div class="card">
+<b>Weather Forecasting using MLP</b><br>
+r² = 0.9985
+<a class="cta" href="reports/weather-mlp.pdf" target="_blank">View Report</a>
+</div>
+
+<div class="card">
+<b>Denoising Low-Dose CT Images</b><br>
+ssim 0.8774 | psnr 34.26
+<a class="cta" href="reports/ct-denoise.pdf" target="_blank">View Report</a>
+</div>
+
+<div class="card">
+<b>ADR Prediction using ProGen</b><br>
+deep learning + protein-drug modeling
+<a class="cta" href="reports/progen-adr.pdf" target="_blank">View Report</a>
+</div>
+
+</div>
+</body>
+</html>
