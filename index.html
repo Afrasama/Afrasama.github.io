@@ -1,43 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>afrasama a harlapur</title>
+  <meta charset="UTF-8">
+  <title>Afrasama A Harlapur | Portfolio</title>
+
   <style>
-    body { font-family: Arial; max-width: 900px; margin: 40px auto; line-height: 1.7; }
-    h1 { color: #222; }
-    h2 { color: #444; }
-    .card { padding: 15px; border: 1px solid #ddd; border-radius: 10px; margin-bottom: 15px; }
+    body{
+      margin:0;
+      font-family: 'Segoe UI', Roboto, Arial;
+      background:#0f172a;
+      color:#e5e7eb;
+      line-height:1.7;
+    }
+
+    /* navbar */
+    nav{
+      background:#020617;
+      padding:15px 50px;
+      position:sticky;
+      top:0;
+      z-index:10;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    nav a{
+      color:#e5e7eb;
+      margin-left:20px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    /* container */
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    /* hero */
+    .hero{
+      text-align:center;
+      margin-top:20px;
+    }
+    .hero h1{
+      font-size:38px;
+      margin-bottom:10px;
+    }
+    .tag{
+      color:#38bdf8;
+      font-weight:600;
+    }
+
+    /* section */
+    h2{
+      margin-top:60px;
+      color:#f1f5f9;
+      border-left:5px solid #38bdf8;
+      padding-left:10px;
+    }
+
+    /* cards */
+    .card{
+      background:#020617;
+      border:1px solid #1f2937;
+      border-radius:16px;
+      padding:20px;
+      margin-top:20px;
+      transition:0.3s;
+    }
+    .card:hover{
+      transform:translateY(-4px);
+      border-color:#38bdf8;
+      box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .cta{
+      background:#38bdf8;
+      color:#020617;
+      font-weight:600;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      display:inline-block;
+      margin-top:10px;
+    }
+
+    .cta:hover{
+      background:#7dd3fc;
+    }
+
+    footer{
+      text-align:center;
+      margin-top:50px;
+      padding:20px;
+      color:#94a3b8;
+    }
+
   </style>
+
 </head>
+
 <body>
 
-<h1>hi, i'm afrasama a harlapur 👋</h1>
-<p>computer science student | ai • data analysis • software development</p>
+<nav>
+  <div><b>Afrasama A Harlapur</b></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-<h2>projects</h2>
+<div class="container">
 
-<div class="card">
-  <b>weather forecasting using mlp</b><br>
-  predicted atmospheric pressure using era5 data<br>
-  r² = 0.9985
+  <div class="hero">
+    <h1>Hi, I'm Afrasama 👋</h1>
+    <p class="tag">Computer Science Student • AI • Data Analysis • Software Development</p>
+  </div>
+
+  <!-- about -->
+  <h2 id="about">About Me</h2>
+  <div class="card">
+    Motivated Computer Science student with a strong foundation in AI, Data Analysis, and Software Development.
+    Passionate about solving real-world problems through innovation and analytical thinking.
+  </div>
+
+  <!-- projects -->
+  <h2 id="projects">Projects</h2>
+
+  <div class="card">
+    <b>Weather Forecasting using MLP</b><br>
+    ✔ Predicted atmospheric pressure using ERA5 data<br>
+    ✔ Optimized with Cosine Annealing + AdamW<br>
+    ✔ R² Score: <b>0.9985</b><br>
+    <a class="cta" href="reports/Multilayer_Perceptron_using_MLP.pdf" target="_blank">View Report</a>
+    <a class="cta" href="#">View Code</a>
+  </div>
+
+  <div class="card">
+    <b>Denoising Low-Dose CT Images</b><br>
+    ✔ Autoencoder + Radon Transform + DWT<br>
+    ✔ Supports ALARA-based radiation safety<br>
+    ✔ SSIM: <b>0.8774</b> | PSNR: <b>34.26</b><br>
+    <a class="cta" href="reports/conference paper isha editing.pdf" target="_blank">View Report</a>
+    <a class="cta" href="#">View Code</a>
+  </div>
+
+  <div class="card">
+    <b>Adverse Drug Reaction Prediction using ProGen</b><br>
+    ✔ Deep Learning + Protein-Drug Modeling<br>
+    ✔ FFNN • CNN • GNN • Transformers<br>
+    <a class="cta" href="reports/Revised_Prediction_ADR_drugs.pdf" target="_blank">View Report</a>
+    <a class="cta" href="#">View Code</a>
+  </div>
+
+  <!-- skills -->
+  <h2 id="skills">Skills</h2>
+  <div class="card">
+    <b>Programming:</b> Python, Java, C, C++, SQL<br>
+    <b>Web:</b> HTML, CSS, JavaScript, MERN<br>
+    <b>Tools:</b> Spring Boot, MongoDB<br>
+  </div>
+
+  <!-- publications -->
+  <h2 id="publications">Publications</h2>
+  <div class="card">
+    ✔ Weather Forecasting using MLP — INCOFT 2025<br>
+    ✔ ADR Prediction using ProGen — ICMLDE 2025
+  </div>
+
+  <!-- contact -->
+  <h2 id="contact">Contact</h2>
+  <div class="card">
+    📧 afrasamaharlapur@gmail.com<br>
+    🔗 linkedin.com/in/afrasama-harlapur-44112a215
+  </div>
+
 </div>
 
-<div class="card">
-  <b>denoising low-dose ct images</b><br>
-  autoencoder + radon + dwt<br>
-  ssim 0.8774 | psnr 34.26
-</div>
-
-<div class="card">
-  <b>adverse drug reaction prediction using progen</b><br>
-  deep learning + nlp
-</div>
-
-<h2>skills</h2>
-python • java • c • c++ • sql • mern • spring boot • mongodb
-
-<h2>contact</h2>
-📧 afrasamaharlapur@gmail.com
+<footer>
+  © 2025 — Designed & Built by Afrasama A Harlapur
+</footer>
 
 </body>
 </html>
